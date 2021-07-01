@@ -13,7 +13,7 @@ public class ConexionHTTP {
 
     public byte[] obtenerRespuesta (String urlString) {
         try {
-            URL url = new URL(urlString); // Si no cumple con ser un link valido http://
+            URL url = new URL(urlString);
 
             HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
             urlConnection.setRequestMethod("GET");

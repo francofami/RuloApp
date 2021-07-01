@@ -19,10 +19,10 @@ public class CriptoViewHolder extends RecyclerView.ViewHolder implements View.On
         this.tvNombreCriptomoneda = itemView.findViewById(R.id.nombreCriptomoneda);
         this.tvPrecioCriptomoneda = itemView.findViewById(R.id.precioCriptomoneda);
 
-        Button botonEditar = itemView.findViewById(R.id.botonCalcular);
-        botonEditar.setOnClickListener(this);
-
-        this.listener = listener;
+//        Button botonEditar = itemView.findViewById(R.id.botonCalcular);
+//        botonEditar.setOnClickListener(this);
+//
+//        this.listener = listener;
     }
 
     public void setPosition(int position) { this.position = position; }

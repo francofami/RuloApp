@@ -5,12 +5,30 @@ public class Cripto {
 
     private String nombreExchange;
     private String nombreCriptomoneda;
-    private Float precio;
+    private Double precioVenta;
+    private Double precioCompra;
 
-    public Cripto(String nombreExchange, String nombreCriptomoneda, Float precio) {
+    public Cripto(String nombreExchange, String nombreCriptomoneda, Double precioVenta, Double precioCompra) {
         this.nombreExchange = nombreExchange;
         this.nombreCriptomoneda = nombreCriptomoneda;
-        this.precio = precio;
+        this.precioVenta = precioVenta;
+        this.precioCompra = precioCompra;
+    }
+
+    public Double getPrecioVenta() {
+        return precioVenta;
+    }
+
+    public void setPrecioVenta(Double precioVenta) {
+        this.precioVenta = precioVenta;
+    }
+
+    public Double getPrecioCompra() {
+        return precioCompra;
+    }
+
+    public void setPrecioCompra(Double precioCompra) {
+        this.precioCompra = precioCompra;
     }
 
     public String getNombreExchange() {
@@ -21,10 +39,6 @@ public class Cripto {
         return nombreCriptomoneda;
     }
 
-    public Float getPrecio() {
-        return precio;
-    }
-
     public void setNombreExchange(String nombreExchange) {
         this.nombreExchange = nombreExchange;
     }
@@ -33,16 +47,13 @@ public class Cripto {
         this.nombreCriptomoneda = nombreCriptomoneda;
     }
 
-    public void setPrecio(Float precio) {
-        this.precio = precio;
-    }
-
     @Override
     public String toString() {
         return "Cripto{" +
                 "nombreExchange='" + nombreExchange + '\'' +
                 ", nombreCriptomoneda='" + nombreCriptomoneda + '\'' +
-                ", precio=" + precio +
+                ", precioVenta=" + precioVenta +
+                ", precioCompra=" + precioCompra +
                 '}';
     }
 }

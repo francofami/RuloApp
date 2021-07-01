@@ -37,7 +37,7 @@ public class CriptoAdapter extends RecyclerView.Adapter<CriptoViewHolder> {
         Cripto cripto = this.criptoList.get(position);
 
         holder.tvNombreCriptomoneda.setText(cripto.getNombreCriptomoneda());
-        holder.tvPrecioCriptomoneda.setText(cripto.getPrecio().toString());
+        holder.tvPrecioCriptomoneda.setText(cripto.getPrecioVenta().toString());
         holder.setPosition(position);
     }
 
